@@ -4,7 +4,8 @@
 
 *{padding: 0px; margin:0px;box-sizing: border-box;}
 
-body{
+body{background: rgb(245,243,246);
+    background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);
     color: black;
     font-family: sans-serif;} 
 
@@ -60,7 +61,7 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 .formularioHome fieldset div input {width: 4rem;font-size:smaller;}
 .formularioHome{position: relative;bottom: 120px;left: 280px;max-width: 12rem;max-height: 0.1rem;}
 
-.mainPregunta h2 { text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:#FF9702;text-shadow: 1px 1px rgb(165, 163, 163)}
+.animate__shakeY h2 { text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:#D35400;text-shadow: 2px 2px black;}
 
 .seccionUnoHome {display: grid;grid-template-columns: 0.5fr 0.5fr;column-gap: 1.5rem;border-bottom: 5px solid orange;margin-bottom: 25px;row-gap: 2rem;}
 
@@ -86,7 +87,7 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 
 .mapaHome iframe{ width: 95%;margin-left: 15px;margin-right: 15px;}
 .seccionDosHome {display: flex;justify-content: center;flex-direction: column;}
-.seccionDosHome h2 {text-align: center;word-spacing: 2px;font-size:40px;margin: 15px;color:#FF9702;}
+.seccionDosHome h2 {text-align: center;word-spacing: 2px;font-size:40px;margin: 15px;color:#D35400;text-shadow: 2px 2px black;}
 .seccionDosHome ol {display: flex;justify-content: center;align-items: center;flex-direction: column;margin: 20px;}
 .seccionDosHome ol li {font-weight:bold;}
 .seccionDosHome ol img {margin: 10px;}
@@ -101,7 +102,7 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 
 /* Diseño Main Como Funciona */
 
-.funcionamientoEstablecimientoDeportivo h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#FF9702;font-weight: bold;text-shadow: 0.5px 0.5px grey;}
+.funcionamientoEstablecimientoDeportivo h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
 .funcionamientoEstablecimientoDeportivo ol {display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;}
 .funcionamientoEstablecimientoDeportivo ol li {font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;}
 .funcionamientoEstablecimientoDeportivo ol p{font-size: 0.8rem;}
@@ -120,7 +121,7 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {width:10rem;margin-right: 5px;}
 .funcionamientoDisfruta img {width: 15%;}
 
-.funcionamientoDeportista h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#FF9702;font-weight: bold;text-shadow: 0.5px 0.5px grey;}
+.funcionamientoDeportista h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
 .funcionamientoDeportista ol {display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;}
 
 .funcionamientoDeportista ol li {font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;}
@@ -163,7 +164,7 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 
 .complejoInscriptoTenisTres{display: flex;flex-direction: column;justify-content: center; align-items: center;margin-top: 10px;margin-bottom: 10px;row-gap: 1rem;}
 
-.formularioInscripcion h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:#FF9702 ;font-weight: bold;text-shadow: 1px 1px rgb(165, 163, 163);}
+.formularioInscripcion h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
 
 .formularioInscripcion {margin: 5px;}
 .formularioInscripcion fieldset legend {text-align: center;font-weight: bold;margin: 10px;text-shadow: 1px 1px grey;}
@@ -176,8 +177,8 @@ footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.
 
 .textoNosotros {text-align: center;word-spacing: 2px;font-size:1.2rem;margin: 30px;}
 
-.textoNosotros span {color: #FF9702;font-weight: bold;}
-.textoNosotros .deporteando{font-family:'Permanent Marker';color:black}
+.textoNosotros span {color:#D35400;text-shadow: 1px 1px black;;font-weight: bold;}
+.textoNosotros .deporteando{font-family:'Permanent Marker';color:black;}
 
 .deporteando{font-family:'Permanent Marker';color:black}
 
@@ -284,6 +285,10 @@ footer {display: grid;grid-template-columns: repeat(4,1fr); grid-template-rows:1
 
 /*Media Queries min width 1200px */
 
+/*Header */
+
+@media screen and (min-width:1200px) {.menu .nav li a:hover {color: white;}}
+
 /*Main*/
 
 @media screen and (min-width:1200px) {.formularioHome{position: relative;bottom: 200px;left: 810px;max-width: 25rem;max-height: 3rem;} 
@@ -341,7 +346,9 @@ footer {display: grid;grid-template-columns: repeat(4,1fr); grid-template-rows:1
 .complejosInscriptosTenis ul li {margin-left: 90px;}
 }
 
+/* Footer */
 
+@media screen and (min-width:1200px) { .footerSecciones ul li a:hover{color: white;} }
 
 
 
