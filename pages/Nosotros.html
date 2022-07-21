@@ -4,36 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- CSS ANIMATE.STYLE -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-     />
-     <!--CSS-->
+      <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- CSS ANIMATE.STYLE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Nosotros</title>
 </head>
 <body>
  <div class="EstiloGeneral">
-    <header> 
-        <div class="encabezadoIzquierdo">
-             <a href="../index.html"><img src="../imagenes/logo-deporteando.jpg" alt="Imagen Logo Deporteando" ></a>
-            <h1><a href="../index.html">Deporteando </a></h1>
+     <header class="container-fluid">
+        <div class="row">
+        <nav class="navbar bg-dark fixed-top col-12">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../imagenes/logo-deporteando.jpg" alt="Imagen Logo Deporteando" ></a>
+                <h1> <a class="navbar-brand text-center" href="../index.html"> Deporteando </a></h1>
+                <div class="desplegable">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"   aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"> Menú</h5>
+                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                         </div>
+                        <div class="offcanvas-body">
+                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html" id="menuInicio">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Secciones
+                                   </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="../pages/Como Funciona.html">Como Funciona</a></li>
+                                        <li><a class="dropdown-item" href="../pages/Complejos Adheridos.html">Complejos Adheridos</a></li>
+                                        <li><a class="dropdown-item" href="../pages/Nosotros.html">Nosotros</a></li>
+                                        <li><a class="dropdown-item" href="../pages/Preguntas Frecuentes.html">Preguntas Frecuentes</a></li>
+                                   </ul>
+                                   </li>
+                             </ul>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </nav>
         </div>
-        <div class="encabezadoDerecho">
-            <img src="../imagenes/login user.png" alt="Imagen Registro Usuario" class="usuario">
-            <nav class="menu">
-                 <img src="../imagenes/menu derecho.png" alt="Imagen Menu">
-                 <ul class="nav">
-                     <li><a href="../index.html">Inicio</a>  </li>
-                     <li><a href="../pages/Como Funciona.html">Como Funciona</a> </li>
-                     <li><a href="../pages/Complejos Adheridos.html"> Complejos Adheridos </a> </li>
-                     <li><a href="../pages/Preguntas Frecuentes.html"> Preguntas Frecuentes </a> </li>
-                </ul>
-             </nav>
-         </div>
-   </header>
-    <main class="cuerpoNosotros"> 
+     </header>
+     <main class="cuerpoNosotros"> 
      <div class="mainArriba">
          <img src="../imagenes/imagen voley.jpg" alt="Imagen Cancha de Voley">
      </div>
@@ -50,8 +75,8 @@
 
           <img src="../imagenes/imagen celular deporteando.jpg" alt="Imagen Celular App">
      </div>
-    </main>
-    <footer> 
+     </main>
+     <footer> 
         <div class="footerDerecha">   
              <img src="../imagenes/logo-deporteando.jpg" alt="Imagen Logo Deporteando">
         </div>
@@ -90,7 +115,7 @@
            <p> Copyright 2022 Deporteando</p> 
            <img src="../imagenes/copyright.png" alt="Imagen Copyright">
        </div>
-    </footer>
+     </footer>
  </div>
 </body>
 </html>
